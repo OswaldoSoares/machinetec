@@ -1,0 +1,62 @@
+:root {
+    --corfirst: #ff1493;
+    --corsecond: #00ccff;
+    --backgroud: #333333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: var(--backgroud);
+    max-width: 100vw;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+main .header-base {
+    background-color: var(--corfirst);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .header-base img {
+    padding: 0 10px;
+    vertical-align: 0;
+    max-width: 300px;
+}
+
+main .header-base div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+main .header-base ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+main .header-base ul a {
+    color: white;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+}
+
+main .header-base ul li :hover {
+    color: var(--corsecond);
+    text-decoration: none;
+}
+
+main .header-base ul a :link {
+    color: white;
+}
