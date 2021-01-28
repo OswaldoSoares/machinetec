@@ -1,3 +1,12 @@
 from django.contrib import admin
+from django.contrib.auth import admin as auth_admin
 
-# Register your models here.
+from .forms import AccountChangeForm, AccountCreationForm
+from .models import Account
+
+
+@admin.register(Account)
+class AccountAdmin(auth_admin.UserAdmin):
+    form = AccountChangeForm
+    add_form = AccountCreationForm
+    model = Account
