@@ -60,3 +60,11 @@ main .header-base ul li :hover {
 main .header-base ul a :link {
     color: white;
 }
+
+main .botoes-base a {
+    color: black;
+}
+
+main .botoes-base a :hover{
+    color: black;
+}

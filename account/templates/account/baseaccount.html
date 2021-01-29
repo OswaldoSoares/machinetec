@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}MachineTec{% endblock %}
+
+{% block conteudo %}
+{% load static %}
+<main>
+    <header class="header-base">
+        <div>
+            <img src="{% static 'img/logo_machinetec_02.png' %}" alt="logo_machinetec" width="200px"/>
+        </div>
+    </header>
+    <section>
+        {% block conteudo_account %}
+        {% endblock %}
+    </section>
+</main>
+{% endblock %}
