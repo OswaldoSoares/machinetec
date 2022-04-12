@@ -9,3 +9,8 @@ class AccountChangeForm(forms.UserChangeForm):
 class AccountCreationForm(forms.UserCreationForm):
     class Meta(forms.UserCreationForm.Meta):
         model = Account
+        fields = ('username', 'email',)
+
+
+class AccountLoginForm(forms.AuthenticationForm):
+    pass

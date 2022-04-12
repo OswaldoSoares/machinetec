@@ -3,14 +3,19 @@
 {% block conteudo_account %}
 {% load static %}
 <main>
-    <containet class="account-container">
+    <container class="account-container">
         <div>
-            <form method="post">
-            {% csrf_token %}
-            {{ form }}
-                <button type="submit">ENVIAR</button>
+            <header>
+                <img src="{% static 'img/machinetec_favicon.png' %}" alt="logo_machinetec" width="80px">
+                <img src="{% static 'img/logo_machinetec_05.png' %}" alt="logo_machinetec" width="200px">
+            </header>
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-primary" type="submit">ENVIAR</button>
             </form>
+            <a href="{% url 'register' %}">Cadastre-se</a>
         </div>
-    </containet>
+    </container>
 </main>
 {% endblock %}

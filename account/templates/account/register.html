@@ -3,8 +3,19 @@
 {% block conteudo_account %}
 {% load static %}
 <main>
-    <containet class="account-container">
-        <p> Olá Mundo</p>
-    </containet>
+    <container class="account-container">
+        <div>
+            <header>
+                <img src="{% static 'img/machinetec_favicon.png' %}" alt="logo_machinetec" width="80px">
+                <img src="{% static 'img/logo_machinetec_05.png' %}" alt="logo_machinetec" width="200px">
+            </header>
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-primary" type="submit">ENVIAR</button>
+            </form>
+            <a href="{% url 'login' %}">Já tem conta</a>
+        </div>
+    </container>
 </main>
 {% endblock %}

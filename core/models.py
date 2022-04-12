@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Teste(models.Model):
+    Des = models.CharField(max_length=20)
+    Tempo = models.DurationField(default=0)
+
