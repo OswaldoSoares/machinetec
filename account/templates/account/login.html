@@ -1,0 +1,16 @@
+{% extends 'account/baseaccount.html' %}
+
+{% block conteudo_account %}
+{% load static %}
+<main>
+    <containet class="account-container">
+        <div>
+            <form method="post">
+            {% csrf_token %}
+            {{ form }}
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </containet>
+</main>
+{% endblock %}
